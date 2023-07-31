@@ -9,3 +9,6 @@ insert into employee values(1, 'sushan', 'M');
 CREATE TYPE gender_enumz AS ENUM ('M', 'F');
 create table employee1(id int PRIMARY KEY, name varchar(200), gender gender_enumz NOT NULL DEFAULT 'M');
 insert into employee1 values(1, 'sushan', 'M');
+
+SELECT EXTRACT(HOUR FROM your_date_column) AS hour_only
+FROM your_table;
